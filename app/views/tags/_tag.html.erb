@@ -1,0 +1,17 @@
+<div id="<%= dom_id tag %>">
+  <p>
+    <strong>Name:</strong>
+    <%= tag.name %>
+  </p>
+
+  <h3>Tag games</h3>
+
+  <ul>
+    <% tag.games.each do |game| %>
+      <li>
+        <%= game.title %>
+      </li>
+    <% end %>
+  </ul>
+
+</div>
